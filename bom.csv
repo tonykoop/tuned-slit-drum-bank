@@ -1,0 +1,9 @@
+part,qty,material,thickness_gauge,supplier,cost_usd,lead_time_days,notes
+cold-rolled steel sheet,2,1018 cold-rolled steel,1.5 mm,metal supplier,TBD,TBD,Enough for boxes rack and coupons
+rack isolation strip,2,rubber or neoprene,3 mm,hardware supplier,TBD,TBD,Prevents rack damping and buzz
+soft mallets,2,rubber or yarn,n/a,music supplier,TBD,TBD,Prototype playing test
+M4 screws,24,stainless,n/a,hardware supplier,TBD,TBD,Light rack retainers
+M4 washers,48,stainless,n/a,hardware supplier,TBD,TBD,Load spreading
+threaded inserts or nuts,24,steel,n/a,hardware supplier,TBD,TBD,Retainer hardware
+tuning test mass set,1,brass tape or small magnets,n/a,hardware supplier,TBD,TBD,Temporary pitch lowering during tuning
+clear wax or oil,1,metal-safe finish,n/a,hardware supplier,TBD,TBD,Post-validation temporary finish

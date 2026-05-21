@@ -1,0 +1,22 @@
+{
+  "spdx": "CERN-OHL-W-2.0",
+  "project": "tuned-slit-drum-bank",
+  "authority": "prototype-planning-only",
+  "operations": [
+    {
+      "id": "CNC-001",
+      "target": "C3 Fsharp3 B3 tongue coupons",
+      "requires": ["DXF root radius review", "kerf test"]
+    },
+    {
+      "id": "CNC-002",
+      "target": "twelve box blanks",
+      "requires": ["coupon pitch trend accepted", "paper fold gate passed"]
+    },
+    {
+      "id": "CNC-003",
+      "target": "rack rails",
+      "requires": ["box spacing approved", "isolation strip thickness selected"]
+    }
+  ]
+}

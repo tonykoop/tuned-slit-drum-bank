@@ -1,0 +1,7 @@
+supplier,part,sku,url,min_qty,notes
+local metal supplier,1018 cold-rolled steel sheet 1.5 mm,TBD,TBD,1,Ask for flat sheet without scale or deep scratches
+laser or plasma shop,box and rack flat blanks,TBD,TBD,1,Require root radii and DXF layers preserved
+hardware supplier,M4 stainless fasteners,TBD,TBD,1,Prototype quantity
+rubber supplier,neoprene strip 3 mm,TBD,TBD,1,Compare two durometers for sustain
+music supplier,soft mallets,TBD,TBD,1,Use consistent mallets for validation
+shop stock,tuning mass material,TBD,TBD,1,Brass tape or small removable magnets
