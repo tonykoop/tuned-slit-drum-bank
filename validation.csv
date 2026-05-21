@@ -1,0 +1,17 @@
+target_metric,predicted,measured,units,pass_fail,notes
+C3_primary_pitch,130.8128,TBD,Hz,TBD,Box 1 primary tongue after tuning
+Csharp3_primary_pitch,138.5913,TBD,Hz,TBD,Box 2 primary tongue after tuning
+D3_primary_pitch,146.8324,TBD,Hz,TBD,Box 3 primary tongue after tuning
+Dsharp3_primary_pitch,155.5635,TBD,Hz,TBD,Box 4 primary tongue after tuning
+E3_primary_pitch,164.8138,TBD,Hz,TBD,Box 5 primary tongue after tuning
+F3_primary_pitch,174.6141,TBD,Hz,TBD,Box 6 primary tongue after tuning
+Fsharp3_primary_pitch,184.9972,TBD,Hz,TBD,Box 7 primary tongue after tuning
+G3_primary_pitch,195.9977,TBD,Hz,TBD,Box 8 primary tongue after tuning
+Gsharp3_primary_pitch,207.6523,TBD,Hz,TBD,Box 9 primary tongue after tuning
+A3_primary_pitch,220.0000,TBD,Hz,TBD,Box 10 primary tongue after tuning
+Asharp3_primary_pitch,233.0819,TBD,Hz,TBD,Box 11 primary tongue after tuning
+B3_primary_pitch,246.9417,TBD,Hz,TBD,Box 12 primary tongue after tuning
+pitch_tolerance,10,TBD,cents,TBD,Each primary tongue must pass
+minimum_sustain,3,TBD,s,TBD,Each primary tongue after rack mounting
+adjacent_cross_talk,-10,TBD,dB,TBD,Adjacent box response relative to struck box
+ergonomic_layout,12,TBD,notes reachable,TBD,Chromatic sweep with soft mallets
