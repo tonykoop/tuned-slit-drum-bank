@@ -1,0 +1,9 @@
+feature_id,angle_deg,inside_radius_in,k_factor,bend_allowance_in,sequence,notes
+BOX-LONG-SIDE-A,90,0.059,0.44,0.093,10,All boxes same bend setup
+BOX-LONG-SIDE-B,90,0.059,0.44,0.093,20,Keep tongue face protected
+BOX-SHORT-SIDE-A,90,0.059,0.44,0.093,30,Check brake clearance
+BOX-SHORT-SIDE-B,90,0.059,0.44,0.093,40,Do not trap closure tabs
+BOX-CLOSURE-TAB-A,90,0.059,0.44,0.093,50,Tack after test fit
+BOX-CLOSURE-TAB-B,90,0.059,0.44,0.093,60,Tack after test fit
+RACK-SIDE-FLANGE,90,0.059,0.44,0.093,70,Two side rails
+RACK-CROSS-TIE,90,0.059,0.44,0.093,80,Three cross ties

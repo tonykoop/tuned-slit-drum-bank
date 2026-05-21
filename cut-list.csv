@@ -1,0 +1,15 @@
+part,blank_size,material,nesting_notes
+box_flat_blank_C3,one 200 x 100 x 80 mm folded blank,1.5 mm cold-rolled steel,Leave C3 tongue 8 mm long for trim
+box_flat_blank_Csharp3,one 200 x 100 x 80 mm folded blank,1.5 mm cold-rolled steel,Leave C#3 tongue 8 mm long for trim
+box_flat_blank_D3,one 200 x 100 x 80 mm folded blank,1.5 mm cold-rolled steel,Leave D3 tongue 8 mm long for trim
+box_flat_blank_Dsharp3,one 200 x 100 x 80 mm folded blank,1.5 mm cold-rolled steel,Leave D#3 tongue 8 mm long for trim
+box_flat_blank_E3,one 200 x 100 x 80 mm folded blank,1.5 mm cold-rolled steel,Leave E3 tongue 8 mm long for trim
+box_flat_blank_F3,one 200 x 100 x 80 mm folded blank,1.5 mm cold-rolled steel,Leave F3 tongue 8 mm long for trim
+box_flat_blank_Fsharp3,one 200 x 100 x 80 mm folded blank,1.5 mm cold-rolled steel,Leave F#3 tongue 8 mm long for trim
+box_flat_blank_G3,one 200 x 100 x 80 mm folded blank,1.5 mm cold-rolled steel,Leave G3 tongue 8 mm long for trim
+box_flat_blank_Gsharp3,one 200 x 100 x 80 mm folded blank,1.5 mm cold-rolled steel,Leave G#3 tongue 8 mm long for trim
+box_flat_blank_A3,one 200 x 100 x 80 mm folded blank,1.5 mm cold-rolled steel,Leave A3 tongue 8 mm long for trim
+box_flat_blank_Asharp3,one 200 x 100 x 80 mm folded blank,1.5 mm cold-rolled steel,Leave A#3 tongue 8 mm long for trim
+box_flat_blank_B3,one 200 x 100 x 80 mm folded blank,1.5 mm cold-rolled steel,Leave B3 tongue 8 mm long for trim
+rack_side_rails,2 pieces 1380 x 45 mm,1.5 mm cold-rolled steel,Include 12 locating tabs
+rack_cross_ties,3 pieces 140 x 35 mm,1.5 mm cold-rolled steel,Bend after box spacing is confirmed
