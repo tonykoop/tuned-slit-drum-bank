@@ -1,0 +1,6 @@
+op_id,workpiece,tool_or_process,setup,critical_check
+CNC-001,tongue coupons,laser/plasma,flat 1.5 mm steel,Root radius and kerf quality
+CNC-002,box blanks,laser/plasma,nested sheet with labels,Tongue tips free of tabs
+CNC-003,rack rails,laser/plasma,nested sheet,Slot spacing matches 12 mm gaps
+CNC-004,rack cross ties,laser/plasma,nested sheet,Bend reliefs present
+CNC-005,post-cut deburr,hand tools,bench with soft jaws,No burrs inside tongue cuts
