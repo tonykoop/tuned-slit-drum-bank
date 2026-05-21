@@ -1,0 +1,25 @@
+name,value,units,source,confidence,notes
+instrument_slug,tuned-slit-drum-bank,text,lane,high,Repository and showcase slug
+authority_level,private-review-blueprint,text,agent,high,Derived concept with no measured prototype
+scale_start,C3,text,lane,high,Lowest validated pitch
+scale_end,B3,text,lane,high,Highest validated pitch
+note_count,12,count,lane,high,Chromatic bank
+box_length,200,mm,lane,high,Each slit drum box
+box_width,100,mm,lane,high,Each slit drum box
+box_height,80,mm,lane,high,Each slit drum box
+sheet_material,1018 cold-rolled steel,text,lane,medium,Box and top plates
+sheet_thickness,1.5,mm,lane,high,Nominal thickness
+primary_tongue_width,18,mm,agent,medium,Starter width for validated tongue
+secondary_tongue_width,12,mm,agent,medium,Lower amplitude fifth-above color tongue
+root_radius,2.5,mm,agent,medium,Minimum U-cut root radius to reduce cracking
+tip_trim_reserve,8,mm,agent,medium,Extra tongue length left for tuning trim
+box_gap,12,mm,agent,medium,Gap in rack between boxes
+rack_tilt,8,deg,agent,medium,Player-facing tilt angle
+inside_bend_radius,1.5,mm,shop,medium,Starter equal-to-thickness bend radius
+k_factor,0.44,ratio,shop,medium,Starter mild-steel bend allowance
+nominal_kerf,1.5,mm,shop,medium,Replace with measured laser/plasma kerf
+steel_youngs_modulus,200000000000,Pa,reference,medium,Starter steel E
+steel_density,7850,kg/m3,reference,medium,Starter 1018 steel density
+target_pitch_tolerance,10,cents,lane,high,Primary tongues after tuning
+minimum_sustain,3,s,lane,high,Per primary tongue
+cross_talk_limit,-10,dB,lane,medium,Adjacent box response relative to struck box
