@@ -1,0 +1,19 @@
+# SPDX-License-Identifier: CC-BY-4.0
+
+.DS_Store
+Thumbs.db
+*.bak
+*.tmp
+*.swp
+*.log
+
+# Generated CAD/tool outputs
+*.SLDPRT
+*.SLDASM
+*.SLDDRW
+*.step
+*.stp
+*.dxf
+*.pdf
+
+tmp/
