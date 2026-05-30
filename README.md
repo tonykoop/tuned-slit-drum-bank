@@ -4,6 +4,8 @@
 
 Authority: concept/design-planning blueprint only, not fabrication-ready.
 
+**Status:** L1 concept packet
+
 Private-review V5 blueprint for a 12-note sheet-metal slit drum bank: twelve
 small steel boxes arranged like a compact marimba, each with a laser-cut U
 tongue tuned chromatically from C3 through B3. A second quieter tongue per box

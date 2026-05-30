@@ -1,0 +1,9 @@
+artifact_path,artifact_type,authority,source,mcp_session_id,notes
+wolfram-starter.wl,acoustic-model,analysis_only,hand-authored,n/a,Wolfram cantilever beam model — tongue-length predictions are model estimates; require physical coupon validation
+explorer.html,reference-doc,reference_only,hand-authored,n/a,Browser packet explorer for review — not fabrication authority
+design-brief.md,reference-doc,reference_only,hand-authored,n/a,Supplemental design brief — planning authority only
+drawings/slit-drum-bank-layout.svg,fabrication-plate,pending_measurement,not-yet-generated,n/a,Planned: 12-box chromatic rack layout SVG — requires validated tongue lengths from coupon test
+drawings/slit-drum-bank-tongue.dxf,fabrication-plate,pending_measurement,not-yet-generated,n/a,Planned: U-tongue laser-cut DXF per note — requires physical coupon pitch validation before fabrication authority
+cad/slit-drum-bank.scad,parametric-cad,pending_measurement,not-yet-generated,n/a,Planned: OpenSCAD parametric box + tongue model — requires coupon-validated tongue dimensions
+images/hero-render.png,render,concept_only,not-yet-generated,n/a,Planned: concept render of 12-box bank — not dimensional
+images/macro/tongue-detail.png,macro,concept_only,not-yet-generated,n/a,Planned: macro of U-tongue cut detail — concept only
