@@ -25,7 +25,7 @@ adds a fifth-above shimmer after the primary pitch is validated.
 
 - `design.md` - acoustic and sheet-metal design rationale
 - `parameters.csv` - dimensions, material constants, and note targets
-- `wolfram-starter.wl` - beam model and tongue-length predictions
+- `tuned-slit-drum-bank-starter.wl` - beam model and tongue-length predictions
 - `solidworks-plan.md` and `flat-pattern-checklist.md` - CAD and DXF path
 - `fabrication-plan.md` and `assembly-manual.md` - shop sequence
 - `validation.csv` and `tuning-notes.md` - tuning and test gates
