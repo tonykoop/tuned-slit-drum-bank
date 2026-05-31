@@ -1,5 +1,5 @@
 artifact_path,artifact_type,authority,source,mcp_session_id,notes
-wolfram-starter.wl,acoustic-model,analysis_only,hand-authored,n/a,Wolfram cantilever beam model — tongue-length predictions are model estimates; require physical coupon validation
+tuned-slit-drum-bank-starter.wl,acoustic-model,analysis_only,hand-authored,n/a,Wolfram cantilever beam model — tongue-length predictions are model estimates; require physical coupon validation
 explorer.html,reference-doc,reference_only,hand-authored,n/a,Browser packet explorer for review — not fabrication authority
 design-brief.md,reference-doc,reference_only,hand-authored,n/a,Supplemental design brief — planning authority only
 drawings/slit-drum-bank-layout.svg,fabrication-plate,pending_measurement,not-yet-generated,n/a,Planned: 12-box chromatic rack layout SVG — requires validated tongue lengths from coupon test

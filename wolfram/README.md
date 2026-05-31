@@ -2,7 +2,7 @@
 
 # Wolfram Workspace
 
-The release model is `../wolfram-starter.wl`. Future measured exports may be
+The release model is `../tuned-slit-drum-bank-starter.wl`. Future measured exports may be
 placed here after coupon and prototype-box tests.
 
 Measurements to add:
