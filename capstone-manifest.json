@@ -1,0 +1,42 @@
+{
+  "packet_dir": ".",
+  "title": "Tuned Slit Drum Bank — Starter Packet",
+  "instrument": "tuned slit drum bank",
+  "build_target": "tuned slit drum bank reference scaffold",
+  "artifact_focus": "idiophones instrument starter packet",
+  "generated": "2026-06-21",
+  "readiness": "starter",
+  "release_status": "private / starter scaffold",
+  "fabrication_authority": {
+    "current_status": "starter scaffold — not for fabrication",
+    "generated_images_allowed_as_authority": false,
+    "wolfram_allowed_as_authority": false
+  },
+  "engineering": {
+    "wolfram": [
+      {
+        "source_file": "idiophones/tuned-slit-drum-bank/tuned-slit-drum-bank-starter.wl",
+        "cloud_path": "Musical_Instruments/idiophones/tuned-slit-drum-bank/tuned-slit-drum-bank-starter.wl",
+        "cloud_url": "https://www.wolframcloud.com/obj/wrfcoin/Musical_Instruments/idiophones/tuned-slit-drum-bank/tuned-slit-drum-bank-starter.wl",
+        "permission": "Public-Execute",
+        "kind": "acoustics-starter"
+      },
+      {
+        "source_file": "idiophones/tuned-slit-drum-bank/wolfram/tuned-slit-drum-bank-wolfram-model.wl",
+        "cloud_path": "Musical_Instruments/idiophones/tuned-slit-drum-bank/tuned-slit-drum-bank-wolfram-model.wl",
+        "cloud_url": "https://www.wolframcloud.com/obj/wrfcoin/Musical_Instruments/idiophones/tuned-slit-drum-bank/tuned-slit-drum-bank-wolfram-model.wl",
+        "permission": "Public-Execute",
+        "kind": "geometry-model"
+      }
+    ]
+  },
+  "files_included": [
+    "README.md",
+    "design.md",
+    "bom.csv",
+    "sourcing.csv",
+    "cut-list.csv",
+    "assembly-manual.md",
+    "validation.csv"
+  ]
+}

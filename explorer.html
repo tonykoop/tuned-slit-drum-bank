@@ -1,148 +1,33 @@
-<!-- SPDX-License-Identifier: CC-BY-4.0 -->
 <!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Tuned Slit Drum Bank Explorer</title>
-  <style>
-    :root {
-      --walnut:#3D2817; --cedar:#B98B47; --cream:#F8F4E9; --paper:#FFFFFF;
-      --lapis:#1E3A8A; --gold:#D4A017; --ink:#1F1A14; --muted:#6B5E4D;
-      --rule:#E0D6C5; --serif: Georgia, "Times New Roman", serif;
-      --ui: Inter, "Helvetica Neue", Arial, sans-serif;
-      --mono: "JetBrains Mono", Menlo, Consolas, monospace;
-    }
-    * { box-sizing: border-box; }
-    body { margin: 0; background: var(--cream); color: var(--ink); font-family: var(--ui); line-height: 1.55; }
-    a { color: var(--lapis); text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    .app-bar { position: sticky; top: 0; z-index: 10; min-height: 56px; padding: 12px 22px; background: var(--walnut); color: var(--cream); border-bottom: 3px solid var(--gold); display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
-    .wordmark { font-family: var(--serif); font-style: italic; color: var(--gold); font-size: 22px; }
-    .tagline { font-family: var(--serif); font-size: 15px; }
-    .hero { padding: 36px clamp(18px, 5vw, 64px) 26px; background: var(--paper); border-bottom: 1px solid var(--rule); }
-    .hero .eyebrow { margin: 0 0 8px; color: var(--lapis); font-size: 12px; text-transform: uppercase; font-weight: 700; letter-spacing: 0; }
-    h1 { margin: 0; max-width: 950px; font-family: var(--serif); font-size: clamp(2.1rem, 5vw, 4.2rem); line-height: 1.02; letter-spacing: 0; color: var(--walnut); }
-    .summary { max-width: 850px; margin: 16px 0 0; color: var(--muted); font-size: 1.05rem; }
-    .layout { display: grid; grid-template-columns: 250px minmax(0, 1fr); gap: 24px; padding: 26px clamp(16px, 4vw, 56px) 48px; }
-    nav { position: sticky; top: 82px; align-self: start; background: var(--paper); border: 1px solid var(--rule); border-radius: 6px; padding: 12px; }
-    nav a { display: block; padding: 7px 8px; color: var(--walnut); border-radius: 4px; font-size: 14px; }
-    nav a:hover { background: #EFE7D3; text-decoration: none; }
-    main { display: grid; gap: 18px; min-width: 0; }
-    section { background: var(--paper); border: 1px solid var(--rule); border-radius: 6px; padding: clamp(16px, 3vw, 26px); }
-    h2 { margin: 0 0 12px; font-family: var(--serif); font-size: 1.45rem; color: var(--walnut); letter-spacing: 0; }
-    .stats { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin-top: 16px; }
-    .stat { border: 1px solid var(--rule); border-left: 4px solid var(--cedar); border-radius: 5px; padding: 12px; background: #FFFCF5; min-height: 92px; }
-    .stat strong { display: block; font-family: var(--serif); font-size: 1.35rem; color: var(--walnut); }
-    .diagram { border: 1px solid var(--rule); border-radius: 6px; min-height: 260px; display: grid; place-items: center; background: #f3ead8; overflow: hidden; }
-    svg { width: min(900px, 100%); height: auto; display: block; }
-    details { border: 1px solid var(--rule); border-radius: 6px; padding: 10px 12px; background: #FFFCF5; }
-    details + details { margin-top: 10px; }
-    summary { cursor: pointer; font-weight: 700; color: var(--walnut); }
-    pre { overflow: auto; margin: 12px 0 0; padding: 14px; border-radius: 6px; background: #241f1a; color: #f7f0df; font-family: var(--mono); font-size: 13px; line-height: 1.45; }
-    footer { padding: 20px clamp(16px, 4vw, 56px); color: var(--muted); border-top: 1px solid var(--rule); background: #EFE7D3; }
-    @media (max-width: 860px) { .layout { grid-template-columns: 1fr; } nav { position: static; } .stats { grid-template-columns: 1fr; } }
-  </style>
-</head>
-<body>
-  <header class="app-bar">
-    <span class="wordmark">Heifer Zephyr</span>
-    <span class="tagline">Studio Explorers - Private Blueprint</span>
-  </header>
-  <section class="hero">
-    <p class="eyebrow">Round 4 idiophone</p>
-    <h1>Tuned Slit Drum Bank</h1>
-    <p class="summary">A 12-note chromatic bank of folded steel slit drums, C3 through B3, each tuned by a U-cut primary tongue and mounted on an isolated marimba-style rack.</p>
-  </section>
-  <div class="layout">
-    <nav aria-label="Packet table of contents">
-      <a href="#overview">Overview</a>
-      <a href="#files">Packet Files</a>
-      <a href="#wolfram">Wolfram Starter</a>
-      <a href="#images">Images</a>
-      <a href="#license">License</a>
-    </nav>
-    <main>
-      <section id="overview">
-        <h2>Blueprint Thesis</h2>
-        <p>Keep all twelve resonator boxes dimensionally identical, then tune the chromatic octave through tongue length and small tip-mass corrections. Prototype C3, F#3, and B3 first so the full bank inherits measured root-stiffness corrections.</p>
-        <div class="stats">
-          <div class="stat"><strong>C3-B3</strong>12 chromatic primary tongues.</div>
-          <div class="stat"><strong>200 x 100 x 80</strong>Millimeter steel boxes.</div>
-          <div class="stat"><strong>3 s</strong>Minimum sustain after rack mounting.</div>
-        </div>
-        <div class="diagram" role="img" aria-label="Schematic of twelve slit drum boxes arranged chromatically on a rack.">
-          <svg viewBox="0 0 920 300" xmlns="http://www.w3.org/2000/svg">
-            <rect width="920" height="300" fill="#f3ead8"/>
-            <path d="M75 230 L845 230" stroke="#3D2817" stroke-width="12" stroke-linecap="round"/>
-            <path d="M95 250 L825 250" stroke="#3D2817" stroke-width="8" stroke-linecap="round"/>
-            <g font-family="Arial, sans-serif" font-size="13" text-anchor="middle">
-              <script type="application/ecmascript"><![CDATA[]]></script>
-              <rect x="70" y="88" width="55" height="120" rx="4" fill="#c7c1b6" stroke="#6b5e4d"/><path d="M87 120 v45 q10 12 20 0 v-45" fill="none" stroke="#1e3a8a" stroke-width="4"/><text x="98" y="82">C3</text>
-              <rect x="132" y="88" width="55" height="120" rx="4" fill="#c7c1b6" stroke="#6b5e4d"/><path d="M149 122 v43 q10 12 20 0 v-43" fill="none" stroke="#1e3a8a" stroke-width="4"/><text x="160" y="82">C#</text>
-              <rect x="194" y="88" width="55" height="120" rx="4" fill="#c7c1b6" stroke="#6b5e4d"/><path d="M211 124 v41 q10 12 20 0 v-41" fill="none" stroke="#1e3a8a" stroke-width="4"/><text x="222" y="82">D</text>
-              <rect x="256" y="88" width="55" height="120" rx="4" fill="#c7c1b6" stroke="#6b5e4d"/><path d="M273 126 v39 q10 12 20 0 v-39" fill="none" stroke="#1e3a8a" stroke-width="4"/><text x="284" y="82">D#</text>
-              <rect x="318" y="88" width="55" height="120" rx="4" fill="#c7c1b6" stroke="#6b5e4d"/><path d="M335 128 v37 q10 12 20 0 v-37" fill="none" stroke="#1e3a8a" stroke-width="4"/><text x="346" y="82">E</text>
-              <rect x="380" y="88" width="55" height="120" rx="4" fill="#c7c1b6" stroke="#6b5e4d"/><path d="M397 130 v35 q10 12 20 0 v-35" fill="none" stroke="#1e3a8a" stroke-width="4"/><text x="408" y="82">F</text>
-              <rect x="442" y="88" width="55" height="120" rx="4" fill="#c7c1b6" stroke="#6b5e4d"/><path d="M459 132 v33 q10 12 20 0 v-33" fill="none" stroke="#1e3a8a" stroke-width="4"/><text x="470" y="82">F#</text>
-              <rect x="504" y="88" width="55" height="120" rx="4" fill="#c7c1b6" stroke="#6b5e4d"/><path d="M521 134 v31 q10 12 20 0 v-31" fill="none" stroke="#1e3a8a" stroke-width="4"/><text x="532" y="82">G</text>
-              <rect x="566" y="88" width="55" height="120" rx="4" fill="#c7c1b6" stroke="#6b5e4d"/><path d="M583 136 v29 q10 12 20 0 v-29" fill="none" stroke="#1e3a8a" stroke-width="4"/><text x="594" y="82">G#</text>
-              <rect x="628" y="88" width="55" height="120" rx="4" fill="#c7c1b6" stroke="#6b5e4d"/><path d="M645 138 v27 q10 12 20 0 v-27" fill="none" stroke="#1e3a8a" stroke-width="4"/><text x="656" y="82">A</text>
-              <rect x="690" y="88" width="55" height="120" rx="4" fill="#c7c1b6" stroke="#6b5e4d"/><path d="M707 140 v25 q10 12 20 0 v-25" fill="none" stroke="#1e3a8a" stroke-width="4"/><text x="718" y="82">A#</text>
-              <rect x="752" y="88" width="55" height="120" rx="4" fill="#c7c1b6" stroke="#6b5e4d"/><path d="M769 142 v23 q10 12 20 0 v-23" fill="none" stroke="#1e3a8a" stroke-width="4"/><text x="780" y="82">B</text>
-            </g>
-          </svg>
-        </div>
-      </section>
-      <section id="files">
-        <h2>Packet Files</h2>
-        <details open><summary><a href="design.md">design.md</a></summary><pre>Private-review chromatic slit-drum bank: twelve identical folded boxes, tuned by measured tongue length corrections.</pre></details>
-        <details><summary><a href="bom.csv">bom.csv</a></summary><pre>Core items: 1.5 mm cold-rolled steel, rack isolation strips, M4 retainers, soft mallets, and temporary tuning masses.</pre></details>
-        <details><summary><a href="validation.csv">validation.csv</a></summary><pre>Pass gates: 12 primary pitches within +/-10 cents, sustain at least 3 seconds, adjacent cross-talk below target, and ergonomic chromatic sweep.</pre></details>
-        <details><summary><a href="tuning-notes.md">tuning-notes.md</a></summary><pre>Leave tongues long, measure raw pitch, trim in small steps, and avoid root grinding.</pre></details>
-        <details><summary><a href="risks.md">risks.md</a></summary><pre>Main risks: root heat damage, weld warp, model mismatch, secondary tongue cross-talk, and rack damping.</pre></details>
-      </section>
-      <section id="wolfram">
-        <h2>tuned-slit-drum-bank-starter.wl</h2>
-        <p><a href="tuned-slit-drum-bank-starter.wl">Open the Wolfram starter model</a></p>
-        <pre># SPDX-License-Identifier: CERN-OHL-W-2.0
-
-Run:
-  wolframscript -file tuned-slit-drum-bank-starter.wl
-
-Outputs:
-  - C3-B3 target frequencies
-  - primary tongue length estimates
-  - secondary fifth-above color tongue estimates
-  - lowest three validation rows</pre>
-      </section>
-      <section id="images">
-        <h2>Images</h2>
-        <figure>
-          <img src="images/hero-render.png" alt="tuned-slit-drum-bank — concept render" loading="lazy">
-        </figure>
-        <figure>
-          <img src="images/macro/tongue-field.png" alt="tuned-slit-drum-bank — tongue field macro" loading="lazy">
-        </figure>
-        <figure>
-          <img src="images/exploded-diagram.png" alt="tuned-slit-drum-bank — exploded diagram" loading="lazy">
-        </figure>
-      </section>
-      <section id="license">
-        <h2>License + Record</h2>
-        <p>Documentation and media: CC BY 4.0. Hardware design data: CERN-OHL-W v2.0.</p>
-        <p><a href="agent-record.md">Open agent-record.md</a></p>
-      </section>
-    
-<section id="wolfram-interactive">
-  <h2>Interactive Wolfram Model</h2>
-  <p>Live parametric explorer (empirical estimates &mdash; not fabrication authority).</p>
-  <iframe src="https://www.wolframcloud.com/obj/wrfcoin/Musical_Instruments/idiophones/tuned-slit-drum-bank/tuned-slit-drum-bank-interactive" style="width:100%;height:780px;border:1px solid #ccc;" loading="lazy"></iframe>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tuned Slit Drum Bank — Explorer</title>
+<style>
+:root{--ink:#2a2018;--walnut:#5b3a29;--accent:#a64b2a;--rule:#e7ddcc;--paper:#fcfaf5;--muted:#8a7d6b;--mono:ui-monospace,Menlo,monospace;--serif:Georgia,'Times New Roman',serif}
+*{box-sizing:border-box}body{margin:0;font-family:var(--serif);color:var(--ink);background:var(--paper);line-height:1.55}
+.wrap{max-width:920px;margin:0 auto;padding:32px 20px 64px}
+header h1{font-size:30px;margin:.2em 0 .1em}.eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);display:block;margin-bottom:6px}
+.status{font-family:var(--mono);font-size:12px;color:var(--muted);margin:0 0 18px}
+section{margin:30px 0;padding-top:18px;border-top:1px solid var(--rule)}
+section h2{font-size:20px;color:var(--walnut);margin:.2em 0 .6em}
+p.intro{font-size:17px}
+.wf-frame{width:100%;height:660px;border:1px solid var(--rule);border-radius:8px;background:#fff;margin:6px 0}
+.wf-actions{margin:6px 0}
+.btn{display:inline-block;padding:7px 14px;border-radius:6px;text-decoration:none;font-family:var(--mono);font-size:13px;background:#efe7d8;color:var(--walnut)}
+.btn.primary{background:var(--accent);color:#fff}
+ul.files{font-family:var(--mono);font-size:14px;columns:2;gap:24px}
+ul.files a{color:var(--walnut)}
+.muted{color:var(--muted);font-size:13px}
+footer{margin-top:44px;color:var(--muted);font-size:12px;font-family:var(--mono)}
+</style></head>
+<body><div class="wrap">
+<header><span class="eyebrow">Instrument Explorer</span><h1>Tuned Slit Drum Bank</h1>
+<p class="status">Status: concept packet</p></header>
+<p class="intro">&lt;!-- SPDX-License-Identifier: CC-BY-4.0 --&gt;</p>
+<section id="wolfram"><h2><span class="eyebrow">Run it — Wolfram Cloud</span>Interactive acoustic model</h2>
+<div class="wf-actions"><a class="btn primary" href="https://www.wolframcloud.com/obj/wrfcoin/Musical_Instruments/idiophones/tuned-slit-drum-bank/tuned-slit-drum-bank-starter.wl" target="_blank" rel="noopener">&#8599; Open full interactive model</a></div><iframe class="wf-frame" src="https://www.wolframcloud.com/obj/wrfcoin/Musical_Instruments/idiophones/tuned-slit-drum-bank/tuned-slit-drum-bank-starter.wl" title="Interactive Wolfram model" loading="lazy"></iframe><p class="muted">Live interactive acoustic model (Wolfram Cloud, Public-Execute). Drag the sliders; every value is computed from <strong>estimate placeholders</strong> — pending measurement, not fabrication authority.</p>
 </section>
-</main>
-  </div>
-  <footer>
-    Tuned Slit Drum Bank. Private-review blueprint; measurement required before fabrication authority.
-  </footer>
-</body>
-</html>
+<section id="files"><h2>Build packet</h2>
+<ul class="files"><li><a href="design.md" target="_blank">design.md</a></li><li><a href="bom.csv" target="_blank">bom.csv</a></li><li><a href="cut-list.csv" target="_blank">cut-list.csv</a></li><li><a href="visual-output-register.csv" target="_blank">visual-output-register.csv</a></li><li><a href="validation.csv" target="_blank">validation.csv</a></li><li><a href="sourcing.csv" target="_blank">sourcing.csv</a></li><li><a href="risks.md" target="_blank">risks.md</a></li></ul></section>
+<footer>Generated by wolfram-cloud-sync/generate_explorer.py · tuned-slit-drum-bank</footer>
+</div></body></html>
