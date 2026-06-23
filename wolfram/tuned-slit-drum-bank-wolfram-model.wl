@@ -52,7 +52,7 @@ secondaryTable[wSecondary_, tt_] := Table[
   {i, Length[midis]}];
 
 (* --- Interactive estimate explorer --- *)
-Manipulate[
+tunedSlitDrumExplorer = Manipulate[
   Module[
    {tt = thicknessMM/1000., wP = primaryWidthMM/1000., wS = secondaryWidthMM/1000.,
     pRows, sRows, lenRange},
