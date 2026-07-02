@@ -7,6 +7,7 @@ a source other than `hand-authored` or `not-yet-generated`.
 | session_id | date | tool | input_ref | output_artifact | prompt_summary | operator_notes |
 |------------|------|------|-----------|-----------------|----------------|----------------|
 | (none yet) | — | — | — | — | — | packet at L1 concept stage; no MCP sessions run |
+| fable-v5-refresh-2026-07-01 | 2026-07-01 | claude-code (Fable 5) | design-brief.md, parameters.csv, risks.md | drawing-brief.md, evolution/ (Stage 0 intake) | V5 baseline gap fill + evolution-pipeline intake | Hand-authored packet docs, no CAD/image tool run; no dimensions changed; L1 status unchanged. |
 
 ## When to add a row
 

@@ -1,0 +1,26 @@
+{
+  "product": "tuned-slit-drum-bank",
+  "pipeline": "studiopipeline:evolution-pipeline",
+  "stage": "0-intake",
+  "master_revision": "rev-A (intake, 2026-07-01)",
+  "generated": "2026-07-01",
+  "cad_masters": [
+    {
+      "path": "parameters.csv",
+      "format": "parameter-table",
+      "sha256": "34b18732e8a668fdc572c6269d5e6cfbe49e5800488f59025605dcfbd933353b",
+      "authority": "pending_measurement",
+      "lossy": false,
+      "notes": "Design-intent parameter table; L1 planning surface. The planned OpenSCAD master (cad/slit-drum-bank.scad) is registered not-yet-generated pending coupon-validated tongue dimensions."
+    },
+    {
+      "path": "tuned-slit-drum-bank-starter.wl",
+      "format": "wolfram-source",
+      "sha256": "4806b47477dc3823daf4c3fbbeee5ef205c1f3d898a75fd854a78853344d0f5f",
+      "authority": "derived_preview",
+      "lossy": false,
+      "notes": "Source-only; L2 evidence. Companion model in wolfram/."
+    }
+  ],
+  "notes": "L1 concept packet — no CAD master exists yet by design (tongue dimensions require coupon validation first; see validation-checklist.md). Gate A not run."
+}
